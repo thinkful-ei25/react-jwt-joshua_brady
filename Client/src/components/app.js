@@ -16,7 +16,7 @@ export class App extends React.Component {
         } else if (prevProps.loggedIn && !this.props.loggedIn) {
             // Stop refreshing when we log out
             this.stopPeriodicRefresh();
-        }
+        } e
     }
 
     componentWillUnmount() {
@@ -36,10 +36,6 @@ export class App extends React.Component {
         }
 
         clearInterval(this.refreshInterval);
-    }
-
-    startAutoLogOffCOunter(){
-        
     }
 
     render() {
